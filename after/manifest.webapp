@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "name": "app-l10n-js",
+  "launch_path": "/index.html",
+  "description": "Demonstrate using localized strings in Firefox",
+  "icons": {
+    "32": "/images/tomato-32.png",
+    "64": "/images/tomato-64.png",
+    "128": "/images/tomato-128.png"
+  },
+  "developer": {
+    "name": "Will Bamberg",
+    "url": "http://github.com/wbamberg"
+  }
+}
