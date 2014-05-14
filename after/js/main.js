@@ -18,20 +18,20 @@ displayMessage.addEventListener("click", function() {
   displayedMessage.textContent = makeGreeting() + " " + makeTomatoCount();
 }, false);
 
-// when they focus on a text field, clear the message and the input field
+function reset(element) {
+  element.value = "";
+  var displayedMessage = document.getElementById('displayed-message');
+  displayedMessage.textContent = "";
+}
 
 var user = document.getElementById('user');
 user.addEventListener("focus", function() {
   var user = document.getElementById('user');
-  user.value = "";
-  var displayedMessage = document.getElementById('displayed-message');
-  displayedMessage.textContent = "";
+  reset(user);
 }, false);
 
 var tomatoCount = document.getElementById('tomato-count');
 tomatoCount.addEventListener("focus", function() {
   var tomatoCount = document.getElementById('tomato-count');
-  tomatoCount.value = "";
-  var displayedMessage = document.getElementById('displayed-message');
-  displayedMessage.textContent = "";
-}, false);	
+  reset(tomatoCount);
+}, false);
